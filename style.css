@@ -1,0 +1,379 @@
+ /* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    height: 100%; /* Ensure consistent height */
+}
+
+span {
+    color: red;
+}
+
+.background {
+    min-height: 100vh; /* Fallback for older browsers */
+    min-height: calc(100dvh); /* Use dynamic viewport height */
+    width: 100%;
+    background-image: url(./images/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Retained for desktop */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .background {
+        background-attachment: scroll; /* Avoid fixed on mobile */
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FIRST-SECTION */
+
+.first h1 {
+    font-family: "Sacramento", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vmin;
+}
+
+.first p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vmin;
+}
+
+.first h1 span {
+    font-family: "Sacramento", serif;   
+}
+
+.first p span {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* SECOND-SECTION */
+
+.second {
+    min-height: 60vh; /* Avoid hard-coded heights */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.second img {
+    border-radius: 50%;
+    height: 25vmin;
+    width: 25vmin;
+}
+
+.second h2 {
+    font-size: 4vmin;
+    margin-top: 2vmin;
+    margin-bottom: 4vmin;
+}
+
+.second p {
+    font-size: 2.5vmin;
+}
+
+/* THIRD-SECTION */
+
+.third h2 {
+    font-size: 4vmin;
+    background-image: linear-gradient(190deg, #df811c, #fcdcbb, #89cff5, #cee3f0, #ffba70);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    border-radius: 0px 4vmin 4vmin 4vmin;
+    padding: 1.2vmin 2vmin;
+    margin-bottom: 5vmin;
+    color: white;
+}
+
+.third div img {
+    height: 25vmin;
+    width: 40vmin;
+    border-radius: 4vmin;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 45vmin 45vmin;
+    grid-template-rows: 30vmin 30vmin;
+    background-image: linear-gradient(190deg, #df811c, #fcdcbb, #89cff5, #cee3f0, #ffba70);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    border-radius: 4vmin 4vmin 0 4vmin;
+    padding: 5vmin 6.5vmin;
+}
+
+.first-image {
+    justify-self: start;
+    align-self: center;
+}
+
+.first-text {
+    justify-self: center;
+    align-self: center;
+    text-align: start;
+}
+
+.second-image {
+    justify-self: end;
+    align-self: center;
+}
+
+.second-text {
+    justify-self: center;
+    align-self: center;
+    text-align: start;
+}
+
+.third h3 {
+    font-size: 3vmin;
+    color: white;
+}
+
+.third p {
+    font-size: 2.2vmin;
+}
+
+/* FOURTH-SECTION */
+
+.fourth {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fourth h2 {
+    font-size: 4vmin;
+}
+
+.fourth .p1 {
+    font-size: 2.5vmin;
+    margin: 2vmin;
+}
+
+.fourth .p2 {
+    font-size: 3vmin;
+    border: 2px solid black;
+    border-radius: 8vmin;
+    padding: 2vmin 3vmin;
+    margin: 3vmin;
+}
+
+.fourth a {
+    font-size: 4vmin;
+    color: white;
+    background-image: linear-gradient(10deg, #df811c, #89cff5, #cee3f0, #ffba70);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    border-radius: 4vmin 0px 4vmin 4vmin;
+    padding: 1.2vmin 2vmin;
+    margin-top: 3vmin;
+    transition-duration: 1s;
+}
+
+/* FIFTH-SECTION */
+
+.fifth {
+    min-height: 20vh;
+    width: 100%;
+}
+
+.fifth .logo {
+    font-size: 5vmin;
+}
+
+.fifth .in {
+    color: red;
+    padding: 0 0.6vmin;
+    transition-duration: 1s;
+    border-radius: 50%;
+}
+
+.fifth .tw {
+    color: black;
+    padding: 0 0.6vmin;
+    transition-duration: 1s;
+    border-radius: 50%;
+}
+
+.fifth p {
+    font-size: 2vmin;
+    color: white;
+    padding: 1vmin;
+    background-color: black;
+    border-radius: 3vmin;
+    margin-top: 2vmin;
+}
+
+/* HOVER-EFFECTS */
+
+.fourth a:hover {
+    background-image: none;
+    background-color: black;
+    border-radius: 4vmin;
+    transition-duration: 1s;
+}
+
+.fifth .in:hover {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    transition-duration: 1s;
+}
+
+.fifth .tw:hover {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    transition-duration: 1s;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 770px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 45vmin;
+        grid-template-rows: repeat(4, 30vmin);
+        border-radius: 4vmin 4vmin 0 4vmin;
+        padding: 5vmin 6.5vmin;
+    }
+
+    .first-image {
+        justify-self: center;
+        order: 1;
+    }
+
+    .first-text {
+        text-align: center;
+        order: 2;
+    }
+
+    .second-image {
+        justify-self: center;
+        order: 3;
+    }
+
+    .second-text {
+        text-align: center;
+        order: 4;
+    }
+
+    .third {
+        min-height: fit-content;
+        padding: 10vmin 0;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .background {
+        background-image: url(./images/back-s.jpg);
+    }
+
+    .second img {
+        height: 30vmin;
+        width: 30vmin;
+    }
+
+    .second h2 {
+        font-size: 6vmin;
+    }
+
+    .second p {
+        font-size: 3.5vmin;
+    }
+
+    .third h2 {
+        font-size: 5vmin;
+        padding: 1.5vmin 2.5vmin;
+        border-radius: 0vmin 5vmin 5vmin 5vmin;
+    }
+
+    .third div img {
+        height: 35vmin;
+        width: 55vmin;
+        border-radius: 4vmin;
+    }
+
+    .grid {
+        grid-template-columns: 55vmin;
+        grid-template-rows: repeat(4, 40vmin);
+        padding: 10vmin 13vmin;
+    }
+
+    .text h3 {
+        font-size: 4vmin;
+    }
+
+    .text p {
+        font-size: 3vmin;
+    }
+
+    .fourth h2 {
+        font-size: 5.5vmin;
+    }
+
+    .fourth .p1 {
+        font-size: 3vmin;
+        margin: 4vmin;
+    }
+
+    .fourth .p2 {
+        margin: 5vmin;
+        margin-top: 7vmin;
+    }
+
+    .fourth a {
+        margin-top: 7vmin;
+    }
+
+    .fifth .logo {
+        font-size: 10vmin;
+    }
+
+    .fifth .in {
+        padding: 0 0.6vmin;
+    }
+
+    .fifth .tw {
+        padding: 0 0.6vmin;
+    }
+
+    .fifth p {
+        font-size: 3.5vmin;
+        padding: 1vmin;
+        margin-top: 2vmin;
+    }
+}
